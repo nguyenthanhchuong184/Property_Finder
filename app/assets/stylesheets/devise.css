@@ -4,6 +4,7 @@
   padding: 15px;
   margin: auto;
   margin-top: 60px;
+}
 
   .checkbox {
     font-weight: 400;
@@ -32,4 +33,4 @@
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
-}
+
