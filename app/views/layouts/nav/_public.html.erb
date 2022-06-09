@@ -6,7 +6,7 @@
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Latest</a>
@@ -29,7 +29,7 @@
         <%= link_to "Sign In", new_account_session_path, class:"nav-link" %>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Sign Up</a>
+        <%= link_to "Sign Up", new_account_registration_path, class:"nav-link" %>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
