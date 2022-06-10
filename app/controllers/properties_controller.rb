@@ -1,7 +1,6 @@
 class PropertiesController < ApplicationController
-  before_action :authenticate_user!
   before_action :set_property, only: %i[ show edit update destroy ]
-
+  before_action :authenticate_account!, only: [:new, :created, :destroy]
   # GET /properties or /properties.json
   def index
     @properties = Property.all
@@ -23,6 +22,7 @@ class PropertiesController < ApplicationController
   # POST /properties or /properties.json
   def create
     @property = Property.new(property_params)
+    @property.account_id = current_account.id
 
     respond_to do |format|
       if @property.save
