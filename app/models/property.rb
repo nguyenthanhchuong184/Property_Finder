@@ -1,3 +1,4 @@
 class Property < ApplicationRecord
-    belongs_to :account
+  mount_uploader :photo, ImageUploader
+  belongs_to :account
 end
