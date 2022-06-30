@@ -1,0 +1,13 @@
+#notifications{
+    display: none;
+}
+body{
+    /* padding-top: 66px; */
+}
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color:  #212529;
+    color: white;
+    padding-top: 59px;
+  }

@@ -35,6 +35,10 @@ gem "jbuilder"
 
 gem "devise"
 
+gem "carrierwave", "0.10.0"
+gem "fog", "~> 1.37.0"
+gem "mini_magick"
+
 gem "sass-rails"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -59,5 +63,6 @@ group :development do
   # gem "rack-mini-profiler"
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
-  # gem "spring"
+  gem "spring"
+  #gem "figaro"
 end
